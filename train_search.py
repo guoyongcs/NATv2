@@ -25,7 +25,7 @@ parser.add_argument('--weight_decay', type=float, default=3e-4, help='weight dec
 parser.add_argument('--report_freq', type=int, default=50, help='report frequency')
 parser.add_argument('--test_freq', type=int, default=4, help='test frequency')
 parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
-parser.add_argument('--epochs', type=int, default=100, help='number of training epochs')
+parser.add_argument('--epochs', type=int, default=200, help='number of training epochs')
 parser.add_argument('--init_channels', type=int, default=20, help='number of init channels')
 parser.add_argument('--layers', type=int, default=8, help='total number of layers')
 parser.add_argument('--save', type=str, default='debug', help='experiment name')

@@ -1,15 +1,27 @@
-# NAT: Neural Architecture Transformer for Accurate and Compact Architectures
+# Towards Accurate and Compact Architectures via Neural Architecture Transformer
 
-Pytorch implementation for “NAT: Neural Architecture Transformer for Accurate and Compact Architectures”.
-
-## A Simple Demo of NAT
+Pytorch implementation for “Towards Accurate and Compact Architectures via Neural Architecture Transformer”.
 
 <p align="center">
-    <img src="./imgs/different_transformation.gif" width="100%"/>
+<img src="./imgs/nat_scheme.pdf" alt="darts" width="100%">
+</p>
+<p align="center">
+Figure: The scheme of NATv2. Our NATv2 takes an arbitrary architecture as input and produces the optimized architecture as the output. We use blue arrows to represent the process of architecture optimization. Red arrows and boxes denote the computation of reward and gradients. $R(\alpha | \beta)$ denotes the reward that measures the performance improvement between two architectures $\alpha$ and $\beta$.
 </p>
 
 
+
+## Operation Transition Scheme of NATv2
+
+<p align="center">
+<img src="./imgs/natv2_transition.pdf" alt="darts" width="100%">
+</p>
+<p align="center">
+Figure: Operation transition scheme of NATv2. (a) operation transition of NATv2; (b) computation costs of different operations. We set the input channel and output channel to 128, the height and width of the input feature maps to 32. Here, sep denotes a separable convolution and dil denotes a dilated separable convolution..
+</p>
+
 ## Requirements
+
 ```
 Python>=3.6, PyTorch==0.4.0, torchvision==0.2.1 graphviz=0.10.1 scipy=1.1.0 pygcn
 ```
@@ -60,10 +72,10 @@ python derive.py --data ./data --arch DARTS --model_path pretrained/fully_connec
 ```
 
 <p align="center">
-<img src="./imgs/darts.jpg" alt="darts" width="80%">
+<img src="./imgs/darts.jpg" alt="darts" width="100%">
 </p>
 <p align="center">
-Figure: An example of architecture transformation..
+Figure: An example of architecture transformation of NATv2.
 </p>
 
 ## Architecture Visualization
@@ -74,15 +86,4 @@ python visualize.py some_arch
 ```
 where `some_arch` should be replaced by any architecture in [genotypes.py](./genotypes.py).
 
-
-
-## Citation
-```
-@inproceedings{guo2019nat,
-  title={NAT: Neural Architecture Transformer for Accurateand Compact Architectures},
-  author={Guo, Yong and Zheng, Yin and Tan, Mingkui and Chen, Qi and Chen, Jian and Zhao, Peilin and Huang, Junzhou},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2019}
-}
-```
 
