@@ -74,7 +74,7 @@ python derive.py --data ./data --arch DARTS --model_path pretrained/fully_connec
 <p align="center">
 <img src="./imgs/darts.jpg" alt="darts" width="100%">
 </p>
-<p align="center">
+<p align="aligned">
 Figure: An example of architecture transformation of NATv2.
 </p>
 
