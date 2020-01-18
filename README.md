@@ -6,7 +6,7 @@ Pytorch implementation for “Towards Accurate and Compact Architectures via Neu
 <img src="./imgs/nat_scheme.jpg" alt="darts" width="100%">
 </p>
 <p align="aligned">
-Figure. The scheme of NATv2. Our NATv2 takes an arbitrary architecture as input and produces the optimized architecture as the output. We use blue arrows to represent the process of architecture optimization. Red arrows and boxes denote the computation of reward and gradients. $R(\alpha | \beta)$ denotes the reward that measures the performance improvement between two architectures $\alpha$ and $\beta$.
+Figure. The scheme of NATv2. Our NATv2 takes an arbitrary architecture as input and produces the optimized architecture as the output. We use blue arrows to represent the process of architecture optimization. Red arrows and boxes denote the computation of reward and gradients.
 </p>
 
 
