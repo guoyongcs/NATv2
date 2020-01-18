@@ -6,7 +6,7 @@ Pytorch implementation for “Towards Accurate and Compact Architectures via Neu
 <img src="./imgs/nat_scheme.jpg" alt="darts" width="100%">
 </p>
 <p align="aligned">
-**Figure**. The scheme of NATv2. Our NATv2 takes an arbitrary architecture as input and produces the optimized architecture as the output. We use blue arrows to represent the process of architecture optimization. Red arrows and boxes denote the computation of reward and gradients. $R(\alpha | \beta)$ denotes the reward that measures the performance improvement between two architectures $\alpha$ and $\beta$.
+Figure. The scheme of NATv2. Our NATv2 takes an arbitrary architecture as input and produces the optimized architecture as the output. We use blue arrows to represent the process of architecture optimization. Red arrows and boxes denote the computation of reward and gradients. $R(\alpha | \beta)$ denotes the reward that measures the performance improvement between two architectures $\alpha$ and $\beta$.
 </p>
 
 
@@ -17,7 +17,7 @@ Pytorch implementation for “Towards Accurate and Compact Architectures via Neu
 <img src="./imgs/natv2_transition.jpg" alt="darts" width="100%">
 </p>
 <p align="aligned">
-**Figure.** Operation transition scheme of NATv2. (a) operation transition of NATv2; (b) computation costs of different operations. We set the input channel and output channel to 128, the height and width of the input feature maps to 32. Here, sep denotes a separable convolution and dil denotes a dilated separable convolution..
+Figure. Operation transition scheme of NATv2. (a) operation transition of NATv2; (b) computation costs of different operations. We set the input channel and output channel to 128, the height and width of the input feature maps to 32. Here, sep denotes a separable convolution and dil denotes a dilated separable convolution..
 </p>
 
 ## Requirements
@@ -75,7 +75,7 @@ python derive.py --data ./data --arch DARTS --model_path pretrained/fully_connec
 <img src="./imgs/darts.jpg" alt="darts" width="100%">
 </p>
 <p align="aligned">
-**Figure.** An example of architecture transformation of NATv2.
+Figure. An example of architecture transformation of NATv2.
 </p>
 
 ## Architecture Visualization
