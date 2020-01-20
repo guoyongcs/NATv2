@@ -86,4 +86,16 @@ python visualize.py some_arch
 ```
 where `some_arch` should be replaced by any architecture in [genotypes.py](./genotypes.py).
 
+## Citation
+
+If you use any part of this code in your research, please cite our conference paper:
+
+```
+@inproceedings{guo2019nat,
+  title={NAT: Neural Architecture Transformer for Accurate and Compact Architectures},
+  author={Guo, Yong and Zheng, Yin and Tan, Mingkui and Chen, Qi and Chen, Jian and Zhao, Peilin and Huang, Junzhou},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2019}
+}
+```
 
